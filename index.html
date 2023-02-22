@@ -84,7 +84,7 @@ https://templatemo.com/tm-580-woox-travel
         <div id="top-banner-1" class="banner">
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
-              <h2>Take a Glimpse Into The Beautiful Of:</h2>
+              <h2>Take a Glimpse Into The Beauty Of:</h2>
               <h1>Masai Mara</h1>
               <div class="border-button"><a href="#Packages">Go There</a></div>
             </div>
@@ -120,7 +120,7 @@ https://templatemo.com/tm-580-woox-travel
         <div id="top-banner-2" class="banner">
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
-              <h2>Take a Glimpse Into The Beautiful Of:</h2>
+              <h2>Take a Glimpse Into The Beauty Of:</h2>
               <h1>Amboseli
               </h1>
               <div class="border-button"><a href="#Packages">Go There</a></div>
@@ -157,7 +157,7 @@ https://templatemo.com/tm-580-woox-travel
         <div id="top-banner-3" class="banner">
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
-              <h2>Take a Glimpse Into The Beautiful Of:</h2>
+              <h2>Take a Glimpse Into The Beauty Of:</h2>
               <h1>Mombasa</h1>
               <div class="border-button"><a href="#Packages">Go There</a></div>
             </div>
@@ -700,7 +700,7 @@ https://templatemo.com/tm-580-woox-travel
             </div>
           </div>
           <div class="col-lg-12">
-            <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+            <form id="reservation-form" name="gs" method="POST" role="form" action="info@shamiritours.com">
               <div class="row">
                 <div class="col-lg-12">
                   <h4 class="text-black">Make Your <em>Reservation</em> Through This <em>Form</em></h4>
@@ -708,13 +708,19 @@ https://templatemo.com/tm-580-woox-travel
                 <div class="col-lg-6">
                     <fieldset>
                         <label for="Name" class="form-label">Your Name</label>
-                        <input type="text" name="Name" class="Name" placeholder="Ex. John Smithee" autocomplete="on" required>
+                        <input type="text" name="Name" id="Name" class="Name" placeholder="Ex. John Smithee" autocomplete="on" required>
                     </fieldset>
                 </div>
                 <div class="col-lg-6">
                   <fieldset>
                       <label for="Number" class="form-label">Your Phone Number</label>
-                      <input type="text" name="Number" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required>
+                      <input type="text" name="Number" id="PhoneNumber" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                      <label for="Number" class="form-label">Your emai address</label>
+                      <input type="email" name="Email" id="Email" class="mail" placeholder="user@example.com" autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-6">
@@ -732,7 +738,7 @@ https://templatemo.com/tm-580-woox-travel
                 <div class="col-lg-6">
                   <fieldset>
                       <label for="Number" class="form-label">Check In Date</label>
-                      <input type="date" name="date" class="date" required>
+                      <input type="date" name="date" id="date" class="date" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
@@ -753,7 +759,8 @@ https://templatemo.com/tm-580-woox-travel
                 </div>
                 <div class="col-lg-12">                        
                     <fieldset>
-                        <button class="main-button">Make Your Reservation Now</button>
+                      
+                        <input type="submit" value="Register" class="main-button bg-warning text-white" onclick="validation()">Make Your Reservation Now</input>
                     </fieldset>
                 </div>
               </div>
@@ -820,6 +827,22 @@ https://templatemo.com/tm-580-woox-travel
     });
   </script>
 
+<script type="text/javascript">
+  function validation()
+  {
+    var N,E,P,B,A,C,X;
+    N=documents.getElementById('Name').value;
+    E=documents.getElementById('Email').value;
+    P=documents.getElementById('PhoneNumber').value;
+    B=documents.getElementById('date').value;
+    A=documents.getElementById('chooseCategory').value;
+    C=documents.getElementById('chooseGuests').value;
+    if (N==''  || E='' || P='' || B='' || A='' || C='')
+        alert("Please fill all the details for Reservation");
+    else
+        alert("Your Reservation is Sucessful");
+  }
+</script>
   </body>
 
 </html>
