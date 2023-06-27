@@ -3,6 +3,16 @@
 
   <head>
 
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+ <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -51,16 +61,17 @@ https://templatemo.com/tm-580-woox-travel
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <h1 class="text-white p-2  text-large px-10">Shamiri</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.php" class="active">Home</a></li>
                         <li><a href="#Packages">Safaris</a></li>
                         <li><a href="#contacts">Contacts</a></li>
                         <li><a href="#Reservation">Reservation</a></li>
+
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -464,7 +475,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-01.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Shamiri Classic<br><span></span></h4>
-                    <h6>€1,500<br><span>/person</span></h6>
+                    <h6>€1,875<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -483,7 +494,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-02.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Pole Pole Safari<br><span></span></h4>
-                    <h6>€970<br><span>/person</span></h6>
+                    <h6>€1,375<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -502,7 +513,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-03.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Magical Amboseli<br><span></span></h4>
-                    <h6>€700<br><span>/person</span></h6>
+                    <h6>€900<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -522,7 +533,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-01.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Magical Kenya<br><span></span></h4>
-                    <h6>€1,500<br><span>/person</span></h6>
+                    <h6>€2,000<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -541,7 +552,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-01.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Pride of Kenya<br><span></span></h4>
-                    <h6>€3,000<br><span>/person</span></h6>
+                    <h6>€3,950<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -581,7 +592,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-02.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Shamiri Magical Tembo<br><span></span></h4>
-                    <h6>€1,240<br><span>/person</span></h6>
+                    <h6>€1,450<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -600,7 +611,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-02.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Shamiri Twiga<br><span></span></h4>
-                    <h6>€700<br><span>/person</span></h6>
+                    <h6>€845<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -619,7 +630,7 @@ https://templatemo.com/tm-580-woox-travel
                   <img src="assets/images/offers-03.jpg" alt="">
                   <div class="text">
                     <h4 class="text-black">Shamiri Mini Safari<br><span></span></h4>
-                    <h6>€1,590<br><span>/person</span></h6>
+                    <h6>€1,700<br><span>/person</span></h6>
                     <div class="line-dec"></div>
                     <ul>
                       <li>Deal Includes:</li>
@@ -700,7 +711,7 @@ https://templatemo.com/tm-580-woox-travel
             </div>
           </div>
           <div class="col-lg-12">
-            <form id="reservation-form" name="gs" method="POST" role="form" action="info@shamiritours.com">
+            <form id="reservation-form" name="gs" method="POST" role="form" action="contact.php">
               <div class="row">
                 <div class="col-lg-12">
                   <h4 class="text-black">Make Your <em>Reservation</em> Through This <em>Form</em></h4>
@@ -714,12 +725,12 @@ https://templatemo.com/tm-580-woox-travel
                 <div class="col-lg-6">
                   <fieldset>
                       <label for="Number" class="form-label">Your Phone Number</label>
-                      <input type="text" name="Number" id="PhoneNumber" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required>
+                      <input type="tel" name="Number" id="PhoneNumber" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-6">
                   <fieldset>
-                      <label for="Number" class="form-label">Your emai address</label>
+                      <label for="Number" class="form-label">Your email address</label>
                       <input type="email" name="Email" id="Email" class="mail" placeholder="user@example.com" autocomplete="on" required>
                   </fieldset>
                 </div>
@@ -746,22 +757,25 @@ https://templatemo.com/tm-580-woox-travel
                         <label for="chooseDestination" class="form-label">Choose Your Destination</label>
                         <select name="Destination" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
                             <option selected> Shamiri Classic</option>
-                            <option value="Italy, Roma">Pole Pole safari</option>
-                            <option value="France, Paris">Magical Amboseli</option>
-                            <option value="Engaland, London">Magical Kenya</option>
-                            <option value="Switzerland, Lausanne">Pride of Kenya</option>
-                            <option value="Switzerland, Lausanne">Maasai Mara Magic</option>
-                            <option value="Switzerland, Lausanne">Shamiri Magical Tembo</option>
-                            <option value="Switzerland, Lausanne">Shamiri Twiga</option>
-                            <option value="Switzerland, Lausanne">Shamiri Mini Safari</option>
+                            <option value="Pole Pole safari">Pole Pole safari</option>
+                            <option value="Magical Amboseli">Magical Amboseli</option>
+                            <option value="Magical Kenya">Magical Kenya</option>
+                            <option value="Pride of Kenya">Pride of Kenya</option>
+                            <option value="Maasai Mara Magic">Maasai Mara Magic</option>
+                            <option value="Shamiri Magical Tembo">Shamiri Magical Tembo</option>
+                            <option value="Shamiri Twiga">Shamiri Twiga</option>
+                            <option value="Shamiri Mini Safari">Shamiri Mini Safari</option>
                         </select>
                     </fieldset>
                 </div>
                 <div class="col-lg-12">                        
                     <fieldset>
                       
-                        <input type="submit" value="Register" class="main-button bg-warning text-white" onclick="validation()">Make Your Reservation Now</input>
+                        <input type="submit" name="submitButton" value="Register" class="main-button bg-warning text-white" onclick="validation()"></input>
                     </fieldset>
+                    <br>
+                 <center><div id="google_translate_element"></div></center>
+                    
                 </div>
               </div>
             </form>
@@ -769,6 +783,7 @@ https://templatemo.com/tm-580-woox-travel
         </div>
       </div>
     </div>
+    
   </section>
 
   <!--div class="call-to-action">
@@ -843,6 +858,19 @@ https://templatemo.com/tm-580-woox-travel
         alert("Your Reservation is Sucessful");
   }
 </script>
+
+<script>
+function validation() {
+  var txt;
+  if (confirm("Confirm Reservation!")) {
+    txt = "Your Reservation was Successful!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
   </body>
 
 </html>
